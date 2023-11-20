@@ -1,0 +1,5 @@
+@media screen and (min-width: 768px) {
+  .App {
+    max-width: 420px;
+  }
+}
