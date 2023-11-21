@@ -4,8 +4,9 @@ import { useNavigate, useParams } from 'react-router-dom'
 import './card-content.css'
 
 import img_button_back from '../assets/img_button_back.svg'
-import bg_card_cover from '../assets/bg_card_cover.png'
-import img_main_card_cover from '../assets/bg_card_cover_22.jpg'
+//import bg_card_cover from '../assets/bg_card_cover.png'
+import bg_card_cover from '../assets/bg_2.png'
+import img_main_card_cover from '../assets/bg_card_cover_22.png'
 import title_center_card_cover from '../assets/title_center_card_cover.png'
 import img_kiss_card_cover from '../assets/img_kiss_card_cover.png'
 import img_heart_card_cover from '../assets/img_heart_card_cover.png'
@@ -28,16 +29,25 @@ function CardCover() {
     }
 
     return (
-        <div className="App" style={{ position: 'relative' }}>
+        <div className="App" style={{
+            backgroundColor: '#FCEDEA',
+            position: 'relative',
+            display: 'cover',
+            flexDirection: 'column',
+            width: '100vw',
+        }}>
             <div
                 style={{
-                    backgroundImage: `url(${bg_card_cover})`,
+                    
+                    //backgroundImage: `url(${bg_card_cover})`,
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: 'cover',
-                    // overflow: 'hidden',
-                    width: '600px',
-                    maxWidth: "520px",
+                    //overflow: 'hidden',
+                    width: '80vw',
+                    maxWidth: "500px",
                     position: 'relative',
+                    //flexDirection: 'column',
+                    //height: '50vh'
                 }}
             >
                 {/* Button back */}
@@ -45,7 +55,7 @@ function CardCover() {
                     style={{
                         position: 'absolute',
                         top: 0,
-                        left: 0,
+                        left: -10,
                         zIndex: 2,
                     }}
                 >
@@ -65,8 +75,8 @@ function CardCover() {
 
                 <div
                     style={{
-                        width: '100%',
-                        height: '100vh',
+                        width: '90%',
+                        height: '90vh',
                         position: 'absolute',
                         top: 0,
                         left: 0,
@@ -79,11 +89,11 @@ function CardCover() {
                 >
                     <div
                         style={{
-                            position: 'absolute',
-                            top: 540,
-                            left: 170,
+                            position: 'relative',
+                            top: 490,
+                            left: 50,
                             right: 0,
-                            bottom: 0,
+                            bottom: 100,
                             zIndex: 2,
                         }}
                     >
@@ -107,7 +117,7 @@ function CardCover() {
                         style={{
                             position: 'absolute',
                             bottom: 0,
-                            right: -20,
+                            right: 0,
                             zIndex: 2,
                         }}
                     >
